@@ -1,0 +1,262 @@
+header {
+    background-color: #D4CEC0;
+    padding: 1vw;
+    color: black;
+}
+
+.nav-tabs {
+    background-color: #9AB6C2;
+    border: none;
+    border-top: #9AB6C2 1px solid;
+    color: black;
+}
+.nav .nav-tabs :hover{
+    border-top: #D4CEC0 1px solid;
+    border-left: #D4CEC0 1px solid;
+    border-right: #D4CEC0 1px solid;
+    border-bottom: none;
+}
+.active a {
+    background-color: #D4CEC0 !important;
+}
+body {
+    background-color: #D4CEC0;
+}
+a {
+  color:black !important;
+}
+body{
+  max-width: 100%;
+  float: none;
+  margin: auto; 
+}
+#portfolio {  
+    margin: 1rem 0;
+    -webkit-column-count: 3; 
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 1rem;
+    -moz-column-gap: 1rem;
+    column-gap: 1rem;
+    -webkit-column-width: 33.33333333333333%;
+    -moz-column-width: 33.33333333333333%;
+    column-width: 33.33333333333333%;
+}
+.tile { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease;
+
+}
+.tile:hover { 
+
+}
+
+.scale-anm {
+  transform: scale(1);
+}
+
+
+p{ 
+  padding:10px; 
+  border-bottom: 1px #ccc dotted; 
+  text-decoration: none; 
+  font-family: lato; 
+  text-transform:uppercase; 
+  font-size: 12px; 
+  color: #333; 
+  display:block; 
+  float:left;
+}
+
+p:hover { 
+  cursor:pointer; 
+  background: #333; 
+  color:#eee; }
+
+.tile img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  
+}
+
+.btn {
+    font-family: Lato;
+    font-size: 1rem;
+    font-weight: normal;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    line-height: normal;
+    padding: .5rem 1rem;
+    margin: 0;
+    height: auto;
+    border: 1px solid;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    color: #555;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.btn:hover {
+  text-decoration: none;
+}
+
+.btn:focus {
+  outline: none;
+  border-color: var(--darken-2);
+  box-shadow: 0 0 0 3px var(--darken-3);
+}
+
+::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.container{
+  padding: 1em 0;
+  float: left;
+  width: 50%;
+}
+@media screen and (max-width: 640px){
+  .container{
+    display: block;
+    width: 100%;
+  }
+}
+
+.container .title{
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.content {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.content .content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay{
+  opacity: 1;
+}
+
+.content-image{
+  width: 100%;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h3{
+  color: #E7EAE1;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.content-details p{
+  color: #E7EAE1;
+  font-size: 0.8em;
+}
+
+.fadeIn-top{
+  top: 20%;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* thumbnail styles */
+
+.thumbnails {
+  display: inline-block;
+  width: auto;
+}
+
+.thumbnails a {
+  float: left;
+  width: 25%;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.thumbnails img {
+  display: block;
+  transition: all .2 ease-in-out;
+}
+
+h2 {
+  color: #E7EAE1;
+  text-align: center;
+  font-size: 60px;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+.gallery {
+  max-width: 25%;
+  max-height: auto;
+}
+.thumbnails:hover img {
+  opacity: .6;
+  transform: scale(.92);
+}
+.thumbnails img:hover {
+  opacity: 1;
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  box-shadow: 0 0 7px rgba(0,0,0,0.5)
+}
+
+h4 {
+  color: #E7EAE1;
+  font-size: 20px;
+  text-align: center;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-top: 5px;
+}
